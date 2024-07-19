@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>战斗平台大厅</title>
+		<link rel="stylesheet" href="css/home.css"/>
+		<script src="js/home.js"></script>
+	</head>
+	<body>
+		<br><br><br>
+		<div class="title1">战斗平台大厅</div>
+		<br><br><br>
+		<div class="title2">
+			<span>您的昵称：</span>
+			<span id="nameText">username</span>
+			<br><br>
+			<span>在线人数:</span>
+			<span id="count"></span>
+			<br><br>
+			<span>当前技能:</span>
+			<span id="ability">无</span>
+		</div>
+		<br><br><br><br>
+		<div class="button-container1">
+			<button id="startSearch" class="button1" onclick="play()">匹配</button>
+			<br><br><br>
+			<button id="abilitySelection" class="button1" onclick="chooseAbility()">选择技能</button>
+		</div>
+		<script>
+			document.getElementById("nameText").innerText=localStorage.getItem('name');
+			document.getElementById('count').innerText=localStorage.getItem('playerCount')+"人";
+			document.getElementById('ability').innerText=localStorage.getItem('abilityName');
+		</script>
+	</body>
+</html>
