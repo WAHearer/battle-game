@@ -1,4 +1,4 @@
-var socket=io('ws://192.168.1.231:3000');
+var socket=io('ws://localhost:3000');
 localStorage.setItem('ability',null);
 localStorage.setItem('abilityName',"无");
 function login(name){
